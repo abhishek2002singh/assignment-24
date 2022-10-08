@@ -54,3 +54,120 @@ int main()
         return 0;
 }
 
+                                       QUESTION NUMBER 4
+                                       
+#include<iostream>
+using namespace std;
+int fact(int m);
+int pascal(int x,int y)
+{
+    long f;
+    f=fact(x)/(fact(y)*fact(x-y));
+    return f;
+}
+int fact(int m)
+{
+    long fac=1;
+    while(m>0){
+        fac=fac*m;
+        m--;
+    }
+        return fac;
+    
+}
+int main()
+{
+    int n;
+    cout<<"enter line where print pascal tringle";
+    cin>>n;
+    int i,j;
+    for(i=0;i<=n;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            cout<<pascal(i,j);
+        }
+        cout<<endl;
+    }
+}
+
+                                QUESTION NUMBER  .5
+                                
+ #include<iostream>
+#include<math.h>
+using namespace std;
+int cheak(int x)
+{
+    int m,c;
+    m=sqrt(5*x*x-4);
+    c=sqrt(5*x*x+4);
+    if(m*m==(5*x*x-4)||c*c==(5*x*x+4))
+    return 1;
+    else
+    return 0;
+}
+int main()
+{
+    int n;
+    cout<<"enter line where print pascal tringle";
+    cin>>n;
+    cheak(n);
+    if(cheak(n)==1)
+    cout<<"fibbonocci series";
+    else
+    cout<<"not fibonocci series";
+    return 0;
+}
+
+
+
+                                            QUESTION NUMBER .6
+                                            
+                                            
+#include<iostream>
+#include<math.h>
+using namespace std;
+void swap(int &x,int &y)
+{
+      int temp;
+      temp=x;
+      x=y;
+      y=temp;
+}
+int main()
+{
+    int a,b;
+    cout<<"enter a and b";
+    cin>>a>>b;
+    cout<<"before swaping";
+    cout<<endl<<"a= "<<a<<"  "<<"b="<<b;
+    swap(a,b);
+    cout<<"a="<<a<<"  b="<<b;
+    return 0;
+}
+
+                                                           QUESTION NUMBER . 7
+                                                           
+                                                           
+#include<iostream>
+#include<math.h>
+using namespace std;
+int sum(int x,int y,int z=0)
+{
+    int su;
+   su=x+y+z;
+   return su;
+}
+int main()
+{
+    int a,b;
+    cout<<"enter a and b";
+    cin>>a>>b;
+    cout<<endl<<"sum="<<sum(a,b);
+    cout<<endl<<"add three number";
+    int c;
+    cout<<"enter a number for c";
+    cin>>c;
+    cout<<endl<<"sum= "<<sum(a,b,c);
+    return 0;
+}
