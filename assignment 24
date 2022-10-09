@@ -171,3 +171,111 @@ int main()
     cout<<endl<<"sum= "<<sum(a,b,c);
     return 0;
 }
+
+
+                                                  QUESYION NUMBER 8
+                                                  
+                                                  
+#include <iostream>
+
+using namespace std;
+float area(int m)
+{
+    return 3.14*m*m;
+}
+int area(int a,int b)
+{
+    return a*b;
+}
+ area(float l,float h)
+{
+    return 1/2*(l*h);
+}
+int main()
+{
+    int r;
+    cout<<"enter radius";
+    cin>>r;
+    cout<<"area of circle is="<<area(r);
+    int a,b;
+    cout<<endl<<"enter length and breadth";
+    cin>>a>>b;
+    cout<<endl<<"area of rectungle is="<<area(a,b);
+    float h,l;
+    cout<<endl<<"enter length and hight";
+    cin>>l>>h;
+    cout<<endl<<"area of tringle is="<<area(l,h);
+    return 0;
+}
+
+
+                                                    QUESTION NUMBER 9
+
+
+#include <iostream>
+
+using namespace std;
+int max(int x,int y)
+{
+    if(x>y)
+        return x;
+    else
+        return y;
+}
+float max(float x,float y)
+{
+    if(x>y)
+        return x;
+    else
+        return y;
+}
+int main()
+{
+    float a,b,n;
+    int x,y,m;
+    cout<<endl<<"enter a number";
+    cin>>a>>b;
+    x=a;
+    y=b;
+    if((x>1&&y>1)&&x!=y){
+            m=max(x,y);
+            if(m==x)
+        cout<<endl<<"maximum number is="<<a;
+        else
+            cout<<endl<<"maximum number is="<<b;
+    }
+    else{
+        n=max(a,b);
+        cout<<endl<<"maximum number is"<<n;
+    }
+    return 0;
+}
+
+
+                                                                 QUESTION NUMBER 10
+                                                                 
+                                                                 
+#include <iostream>
+
+using namespace std;
+int sum(int a,int b)
+{
+    return a+b;
+}
+float sum(float x,float y)
+{
+    return x+y;
+}
+int main()
+{
+    int a,b;
+    cout<<"enter two number";
+    cin>>a>>b;
+    cout<<endl<<"sum="<<sum(a,b);
+    float x,y;
+    cout<<"enter two number";
+    cin>>x>>y;
+    cout<<endl<<"sum is="<<sum(x,y);
+    return 0;
+}
+                                                                 
